@@ -6,7 +6,7 @@
 
 - Edit env variables are per requirements
 ```
-API_BASE_URL=http://localhost:3000
+REACT_APP_API_URL=http://localhost:3000
 ```
 
 ### Development
