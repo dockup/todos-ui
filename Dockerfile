@@ -7,8 +7,8 @@ RUN npm install
 RUN npm run build
 
 
-FROM nginx:1.15-alpine
-RUN apk add --no-cache bash libssl1.0 openssh bash
+FROM nginx:1.17.2-alpine
+RUN apk add --no-cache bash libssl1.1 openssh bash
 WORKDIR /usr/share/nginx/html
 COPY --from=staticassets /todos-app/build ./
 COPY ./nginx.conf /etc/nginx/nginx.conf
